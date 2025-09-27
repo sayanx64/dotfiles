@@ -1,0 +1,61 @@
+configuration {
+    modi: "drun,run";
+    show-icons: true;
+    icon-theme: "Papirus-Dark";  /* install papirus-icon-theme */
+    font: "JetBrainsMono Nerd Font 12";
+    location: 0;   /* center */
+    fullscreen: false;
+    display-drun: " ";
+}
+
+@theme "spotlight"
+
+* {
+    bg: #1e1e2eF0;       /* dark with slight transparency */
+    fg: #cdd6f4;
+    accent: #89b4fa;
+    selected: #313244;
+}
+
+window {
+    transparency: "real";
+    background-color: @bg;
+    text-color: @fg;
+    border: 0px;
+    border-radius: 18px;
+    width: 700px;        /* fixed width */
+    padding: 15px;
+}
+
+mainbox {
+    children: [ inputbar, listview ];
+    spacing: 12px;
+}
+
+inputbar {
+    background-color: @selected;
+    text-color: @fg;
+    padding: 10px 14px;
+    border-radius: 12px;
+}
+
+listview {
+    lines: 8;             /* number of results shown */
+    spacing: 6px;
+    fixed-height: false;
+    dynamic: true;
+}
+
+element {
+    padding: 8px 12px;
+    border-radius: 10px;
+}
+
+element selected {
+    background-color: @accent;
+    text-color: #1e1e2e;
+}
+
+element-text, element-icon {
+    vertical-align: 0.5;
+}

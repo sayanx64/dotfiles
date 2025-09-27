@@ -1,0 +1,93 @@
+/* ===== GLOBAL BAR ===== */
+window#waybar {
+  background: rgba(25, 25, 25, 0.92);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.05);
+  color: #e0e0e0;
+  font-family: "JetBrainsMono Nerd Font", "FiraCode Nerd Font", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+/* ===== MODULES COMMON ===== */
+#workspaces button,
+#cpu, #memory, #temperature, #disk,
+#clock, #pulseaudio, #network, #battery, #tray,
+#custom-launcher {
+  padding: 0 10px;
+  margin: 0 4px;
+  border-radius: 6px;
+}
+
+/* ===== LAUNCHER ===== */
+#custom-launcher {
+  background: #5e81ac;
+  color: #fff;
+  font-size: 16px;
+}
+#custom-launcher:hover {
+  background: #81a1c1;
+}
+
+/* ===== WORKSPACES ===== */
+#workspaces button {
+  background: transparent;
+  color: #aaa;
+}
+#workspaces button.focused {
+  background: #5e81ac;
+  color: #fff;
+}
+#workspaces button.active {
+  background: #81a1c1;
+  color: #fff;
+}
+#workspaces button:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* ===== SYSTEM METRICS ===== */
+#cpu {
+  background: #2e3440;
+  color: #bf616a;
+}
+#memory {
+  background: #2e3440;
+  color: #d08770;
+}
+#temperature {
+  background: #2e3440;
+  color: #ebcb8b;
+}
+#disk {
+  background: #2e3440;
+  color: #a3be8c;
+}
+
+/* ===== CLOCK ===== */
+#clock {
+  background: #3b4252;
+  color: #eceff4;
+}
+
+/* ===== AUDIO ===== */
+#pulseaudio {
+  background: #2e3440;
+  color: #a3be8c;
+}
+
+/* ===== NETWORK ===== */
+#network {
+  background: #2e3440;
+  color: #88c0d0;
+}
+
+/* ===== BATTERY ===== */
+#battery {
+  background: #2e3440;
+  color: #ebcb8b;
+}
+
+/* ===== TRAY ===== */
+#tray {
+  background: #2e3440;
+}

@@ -1,0 +1,39 @@
+# ~/.config/starship.toml
+
+# A clean format string that creates a multi-line prompt
+format = """
+$username@$hostname in $directory$git_branch$git_status
+$line_break$nodejs$python$rust
+$line_break$time $character"""
+
+[directory]
+style = "bold cyan"
+truncation_length = 3
+
+[git_branch]
+symbol = "🌱 "
+style = "bold green"
+
+[git_status]
+style = "red"
+
+[nodejs]
+symbol = "⬢ "
+style = "green"
+
+[python]
+symbol = "🐍 "
+style = "yellow"
+
+[rust]
+symbol = "🦀 "
+style = "red"
+
+[time]
+disabled = false
+time_format = "%I:%M %p" # 12-hour format with AM/PM
+style = "dimmed white"
+
+[character]
+success_symbol = "[❯](bold green)"
+error_symbol = "[❯](bold red)"
